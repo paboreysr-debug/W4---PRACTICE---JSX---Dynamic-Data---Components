@@ -1,0 +1,49 @@
+/* Container styling */
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left; /* Changed to left-align to match the text block */
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+/* Header Component styling */
+h1 {
+  color: #ffb84d; /* Golden/Orange for "ATOMIC CLOCK" */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+/* Time Component styling */
+.time-display {
+  color: #00e5ff; /* Bright Cyan for the date/time */
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Info/Description Section */
+.info-section {
+  background-color: #121212;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #ffb84d;
+}
+
+.info-title {
+  color: #ccc;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info-text {
+  color: #888;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
