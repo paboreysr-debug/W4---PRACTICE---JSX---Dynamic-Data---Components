@@ -1,0 +1,72 @@
+/* Container Background */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #b19cd9;
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+  padding: 40px; /* Added padding for big screens */
+}
+
+/* The Expansion Card */
+.conversion-card {
+  background-color: #1e0b36;
+  padding: 3rem;
+  border-radius: 20px;
+  width: 90%; /* Responsive width */
+  max-width: 1000px; /* significantly wider for big screens */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px; /* Increased spacing for scale */
+  font-size: 2rem; /* Larger heading */
+  margin-bottom: 3rem;
+}
+
+/* Container for the input fields */
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1dfr); /* 3 columns on big screens */
+  gap: 30px;
+}
+
+/* Label Styling */
+label {
+  display: block;
+  color: #8c7ba7;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* Input Styling */
+input {
+  width: 100%;
+  padding: 20px; /* Thicker inputs for better presence */
+  background-color: #3b2a54;
+  border: 1px solid #4a3b63;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1.25rem; /* Larger text for high-res screens */
+  box-sizing: border-box;
+}
+
+input:disabled {
+  cursor: not-allowed;
+  opacity: 0.9;
+  border: 2px solid #7a2a3a; 
+}
+
+/* Responsive adjustment for tablets/phones */
+@media (max-width: 800px) {
+  .input-grid {
+    grid-template-columns: 1fr; /* Stack vertically on small screens */
+  }
+}
